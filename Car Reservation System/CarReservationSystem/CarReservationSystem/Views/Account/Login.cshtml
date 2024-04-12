@@ -1,0 +1,29 @@
+﻿@model CarReservationSystem.Models.User
+@{
+    ViewBag.Title = "Login";
+}
+
+<link href="~/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2>Login</h2>
+            <!--login form-->
+            @using (Html.BeginForm())
+            {
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Username)
+                    @Html.TextBoxFor(model => model.Username, new { @class = "form-control" })
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Password)
+                    @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                </div>
+
+                <button type="submit" class="btn btn-primary">Login</button>
+            }
+        </div>
+    </div>
+</div>

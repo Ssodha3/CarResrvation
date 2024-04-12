@@ -1,0 +1,26 @@
+[
+  {
+    "Model": "Toyota Camry",
+    "ReservationCount": 21
+  },
+  {
+    "Model": "Honda Civic",
+    "ReservationCount": 20
+  },
+  {
+    "Model": "Ford Mustang",
+    "ReservationCount": 5
+  },
+  {
+    "Model": "BMW 3 Series",
+    "ReservationCount": 51
+  },
+  {
+    "Model": "Tesla Model S",
+    "ReservationCount": 73
+  },
+  {
+    "Model": "Chevrolet Corvette",
+    "ReservationCount": 61
+  }
+]

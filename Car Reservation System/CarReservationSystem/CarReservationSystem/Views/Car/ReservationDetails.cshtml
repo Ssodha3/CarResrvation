@@ -1,0 +1,37 @@
+﻿@using CarReservationSystem.Models
+@model List<Reservation>
+
+@{
+    ViewBag.Title = "Reservation Details";
+}
+
+<div class="container">
+    <h2>Reservation Details for @(Model.Count > 0 ? Model.First().CarModel : "Unknown Car Model")</h2>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Date/Time</th>
+                    <th>User Info</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var reservation in Model)
+                {
+                    <tr>
+                        <td>@reservation.DateTime</td>
+                        <td>@reservation.Username</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    @if (Model.Any())
+    {
+        <div class="text-center">
+            <a href="@Url.Action("Reservation", "Car", new { carModel = Model.First().CarModel })" class="btn btn-primary">Book Your Car Reservation</a>
+        </div>
+    }
+</div>

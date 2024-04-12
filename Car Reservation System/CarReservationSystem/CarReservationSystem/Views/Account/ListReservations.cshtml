@@ -1,0 +1,48 @@
+﻿@model List<CarReservationSystem.Models.Reservation>
+
+@{
+    ViewBag.Title = "List of Reservations";
+}
+
+<h2>List of Reservations</h2>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            
+            <tr>
+                <th>Car Model</th>
+                <th>Date/Time</th>
+                <th>User Info</th>
+                <th>Reservation Date and Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--if list null display msg else display details -->
+            @if (Model == null || !Model.Any())
+            {
+                <tr>
+                    <td colspan="7" style="text-align: center;">There are no car reservations.</td>
+                </tr>
+            }
+            else
+            {
+                foreach (var reservation in Model)
+                {
+                    <tr>
+                        <td>@reservation.CarModel</td>
+                        <td>@reservation.DateTime</td>
+                        <td>@reservation.Username</td>
+                        <td>@reservation.ReservationDateTime</td>
+                    </tr>
+                }
+            }
+        </tbody>
+
+
+    </table>
+
+    <div class="text-center">
+        <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Go to Home</a>
+    </div>
+</div>

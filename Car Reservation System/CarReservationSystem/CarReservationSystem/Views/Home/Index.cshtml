@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Home Page</h2>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Car Model</th>
+                <th>Reservation Count</th>
+            </tr>
+        </thead>
+        <!--if no car reserved show msg else display car model and number of reservation-->
+        <tbody>
+            @if (ViewBag.CarReservationCounts == null)
+            {
+                <tr>
+                    
+                    <td colspan="7" style="text-align: center;">There are no car reservations.</td>
+                </tr>
+            }
+            else
+            {
+
+                foreach (var carInfo in ViewBag.CarReservationCounts)
+                {
+                    <tr>
+                        <td>
+                            @carInfo.CarModel
+                        </td>
+                        <td>@carInfo.ReservationCount</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<h2>Car Products</h2>
+
+<div class="products">
+    @foreach (var carInfo in ViewBag.Data)
+    {
+        <div class="product">
+            <img src="@carInfo.ImageUrl" alt="@carInfo.CarModel" />
+            <h3>@carInfo.CarModel</h3>
+            <p>Model: @carInfo.ModelName</p>
+            <a href="@Url.Action("Reservation", "Car", new { carModel =carInfo.CarModel })" class="btn btn-primary">Book Your Car Reservation</a>
+        </div>
+    }
+</div>
+
+<style>
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        width: 250px;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+        .product img {
+            width: 200px; 
+            height: 150px; 
+            object-fit: cover;
+        }
+
+        .product h3 {
+            margin-top: 0;
+        }
+
+        .product p {
+            margin: 5px 0;
+        }
+
+        .product .btn {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+</style>

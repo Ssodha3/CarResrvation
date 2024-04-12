@@ -1,0 +1,15 @@
+[
+{
+  "CarModel": "Toyota Camry",
+  "DateTime": "0001-01-01T00:00:00",
+  "Username": "test",
+  "ReservationDateTime": "2024-04-12T18:59:00"
+}
+,
+{
+  "CarModel": "Honda Civic",
+  "DateTime": "0001-01-01T00:00:00",
+  "Username": "shyama",
+  "ReservationDateTime": "2024-04-18T17:06:00"
+}
+]

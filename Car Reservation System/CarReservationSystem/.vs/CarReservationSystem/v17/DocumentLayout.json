@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\shyam\\Downloads\\Car Reservation System\\Car Reservation System\\CarReservationSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CB0B8F4C-9EBB-45D9-8EA0-59DB1BF3306F}|CarReservationSystem\\CarReservationSystem.csproj|c:\\users\\shyam\\downloads\\car reservation system\\car reservation system\\carreservationsystem\\carreservationsystem\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB0B8F4C-9EBB-45D9-8EA0-59DB1BF3306F}|CarReservationSystem\\CarReservationSystem.csproj|solutionrelative:carreservationsystem\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\shyam\\Downloads\\Car Reservation System\\Car Reservation System\\CarReservationSystem\\CarReservationSystem\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "CarReservationSystem\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\shyam\\Downloads\\Car Reservation System\\Car Reservation System\\CarReservationSystem\\CarReservationSystem\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "CarReservationSystem\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-12T21:33:26.336Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

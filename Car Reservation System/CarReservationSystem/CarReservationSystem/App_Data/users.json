@@ -1,0 +1,12 @@
+// user of website
+
+[
+  {
+    "Username": "ss",
+    "Password": "pw123"
+  },
+  {
+    "Username": "user",
+    "Password": "pw"
+  }
+]
